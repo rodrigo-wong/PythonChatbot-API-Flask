@@ -1,0 +1,1 @@
+A Conversation AI application built to support basic python related questions for educational purposes specifically to help students from the Peer-Assisted-Study-Sessions (PASS) program at Mohawk College
