@@ -18,52 +18,52 @@
     {
       "tag": "python_intro",
       "patterns": ["What is Python?", "Tell me about Python", "Python basics"],
-      "responses": ["Python is a high-level programming language known for its simplicity and readability. For example, you can write a simple 'Hello, World!' program in Python like this:\n\n```python\nprint('Hello, World!')\n```"]
+      "responses": ["Python is a high-level programming language known for its simplicity and readability. Example:\n\n\tprint('Hello, World!')"]
     },
     {
       "tag": "python_installation",
       "patterns": ["How can I install Python?", "Python installation", "Installing Python"],
-      "responses": ["You can download Python from the official website (python.org) and follow the installation instructions for your operating system. For example, here's how you can install Python on Windows:\n\n1. Download the Python installer from python.org.\n2. Run the installer and follow the on-screen instructions.\n3. Python will be installed on your system."]
+      "responses": ["You can download Python from the official website (python.org) and follow the installation instructions for your operating system. For example:\n\n\t1. Download the Python installer from python.org.\n\t2. Run the installer and follow the on-screen instructions.\n\t3. Python will be installed on your system."]
     },
     {
       "tag": "python_syntax",
       "patterns": ["What is Python syntax?", "Python code structure", "Python indentation"],
-      "responses": ["Python uses indentation to indicate blocks of code. For instance, here's a simple 'if' statement in Python:\n\n```python\nif x > 5:\n    print('x is greater than 5')\nelse:\n    print('x is not greater than 5')\n```"]
+      "responses": ["Python uses indentation to indicate blocks of code. Example:\n\n\tif x > 5:\n\t\tprint('x is greater than 5')\n\telse:\n\t\tprint('x is not greater than 5')"]
     },
     {
       "tag": "variables",
       "patterns": ["How do I declare variables in Python?", "Python variables", "Variable assignment"],
-      "responses": ["In Python, you can declare a variable by simply assigning a value to a name. For example, you can declare an integer variable 'x' like this:\n\n```python\nx = 10\n```"]
+      "responses": ["In Python, you can declare a variable by simply assigning a value to a name. Example:\n\n\tx = 10"]
     },
     {
       "tag": "data_types",
       "patterns": ["What are the basic data types in Python?", "Python data types", "Data type examples"],
-      "responses": ["Python has several basic data types, including integers, floats, strings, booleans, and lists. For example, you can declare a string variable like this:\n\n```python\nname = 'Alice'\n```"]
+      "responses": ["Python has several basic data types, including integers, floats, strings, booleans, and lists. Example:\n\n\tname = 'Alice'"]
     },
     {
       "tag": "conditional_statements",
       "patterns": ["How do I use conditional statements in Python?", "Python if statements", "Conditional expressions"],
-      "responses": ["You can use 'if', 'elif', and 'else' statements in Python for conditional logic. For example, here's a basic 'if' statement:\n\n```python\nif age >= 18:\n    print('You are an adult')\nelse:\n    print('You are not an adult')\n```"]
+      "responses": ["You can use 'if', 'elif', and 'else' statements in Python for conditional logic. Example:\n\n\tif age >= 18:\n\t\tprint('You are an adult')\n\telse:\n\t\tprint('You are not an adult')"]
     },
     {
       "tag": "loops",
       "patterns": ["Tell me about loops in Python", "Python for loop", "While loop in Python"],
-      "responses": ["Python provides 'for' and 'while' loops for iterating over sequences or executing code repeatedly. For example, here's a 'for' loop to iterate through a list:\n\n```python\nfruits = ['apple', 'banana', 'cherry']\nfor fruit in fruits:\n    print(fruit)\n```"]
+      "responses": ["Python provides 'for' and 'while' loops for iterating over sequences or executing code repeatedly. Example:\n\n\tfruits = ['apple', 'banana', 'cherry']\n\tfor fruit in fruits:\n\t\tprint(fruit)"]
     },
     {
       "tag": "python_functions",
       "patterns": ["How do I define functions in Python?", "Python function syntax", "Creating functions"],
-      "responses": ["You can define functions in Python using the 'def' keyword followed by the function name and parameters. Here's an example of a simple function:\n\n```python\ndef greet(name):\n    print('Hello, ' + name)\n\ngreet('Alice')\n```"]
+      "responses": ["You can define functions in Python using the 'def' keyword followed by the function name and parameters. Example:\n\n\tdef greet(name):\n\t\tprint('Hello, ' + name)\n\n\tgreet('Alice')"]
     },
     {
       "tag": "string_methods",
       "patterns": ["Common string manipulation methods", "Python string functions", "String operations"],
-      "responses": ["Python provides various string methods, including 'upper()', 'lower()', 'strip()', 'split()', 'join()', and 'replace()', to manipulate and modify strings. For example, you can use 'upper()' to convert a string to uppercase:\n\n```python\ntext = 'hello'\nuppercase_text = text.upper()\nprint(uppercase_text)\n```"]
+      "responses": ["Python provides various string methods, including 'upper()', 'lower()', 'strip()', 'split()', 'join()', and 'replace()', to manipulate and modify strings. Example:\n\n\ttext = 'hello'\n\tuppercase_text = text.upper()\n\tprint(uppercase_text)"]
     },
     {
       "tag": "list_methods",
       "patterns": ["Common list methods in Python", "List operations", "Manipulating lists"],
-      "responses": ["Lists in Python can be modified using methods such as 'append()', 'extend()', 'insert()', 'remove()', 'pop()', and 'sort()'. For instance, you can use 'append()' to add an element to a list:\n\n```python\nfruits = ['apple', 'banana', 'cherry']\nfruits.append('orange')\nprint(fruits)\n```"]
+      "responses": ["Lists in Python can be modified using methods such as 'append()', 'extend()', 'insert()', 'remove()', 'pop()', and 'sort()'. Example:\n\n\tfruits = ['apple', 'banana', 'cherry']\n\tfruits.append('orange')\n\tprint(fruits)"]
     },
     {
       "tag": "help",
