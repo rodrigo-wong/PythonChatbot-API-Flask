@@ -23,7 +23,7 @@
     {
       "tag": "python_installation",
       "patterns": ["How can I install Python?", "Python installation", "Installing Python"],
-      "responses": ["You can download Python from the official website (python.org) and follow the installation instructions for your operating system. For example:\n\n\t1. Download the Python installer from python.org.\n\t2. Run the installer and follow the on-screen instructions.\n\t3. Python will be installed on your system."]
+      "responses": ["You can download Python from the official website (python.org) and follow the installation instructions for your operating system. Example:\n\n\t1. Download the Python installer from python.org.\n\t2. Run the installer and follow the on-screen instructions.\n\t3. Python will be installed on your system."]
     },
     {
       "tag": "python_syntax",
@@ -46,9 +46,14 @@
       "responses": ["You can use 'if', 'elif', and 'else' statements in Python for conditional logic. Example:\n\n\tif age >= 18:\n\t\tprint('You are an adult')\n\telse:\n\t\tprint('You are not an adult')"]
     },
     {
-      "tag": "loops",
-      "patterns": ["Tell me about loops in Python", "Python for loop", "While loop in Python"],
-      "responses": ["Python provides 'for' and 'while' loops for iterating over sequences or executing code repeatedly. Example:\n\n\tfruits = ['apple', 'banana', 'cherry']\n\tfor fruit in fruits:\n\t\tprint(fruit)"]
+      "tag": "for_loop",
+      "patterns": ["Tell me about for loops in Python", "Python for loop", "Using for loop"],
+      "responses": ["Python provides 'for' loops for iterating over sequences. You can use 'for' loops with 'range()' to iterate a specific number of times, or you can iterate through a list. Example:\n\nIterating through a list:\n\n\tfruits = ['apple', 'banana', 'cherry']\n\tfor fruit in fruits:\n\t\tprint(fruit)\n\nUsing 'range()' to iterate a specific number of times:\n\n\tfor i in range(5):\n\t\tprint('Iteration', i)"]
+    },
+    {
+      "tag": "while_loop",
+      "patterns": ["Tell me about while loops in Python", "Python while loop", "Using while loop"],
+      "responses": ["Python provides 'while' loops for executing code repeatedly while a condition is True. Example:\n\n\tcount = 0\n\twhile count < 5:\n\t\tprint('Count:', count)\n\t\tcount += 1"]
     },
     {
       "tag": "python_functions",
@@ -68,7 +73,7 @@
     {
       "tag": "help",
       "patterns": ["/help", "help", "list commands", "available questions"],
-      "responses": ["Sure! Here are some questions you can ask me:\n1. What is Python? (Example: 'Tell me about Python')\n2. How can I install Python? (Example: 'How do I install Python?')\n3. What is Python syntax? (Example: 'Explain Python syntax')\n4. How do I declare variables in Python? (Example: 'How to declare variables in Python?')\n5. What are the basic data types in Python? (Example: 'List Python data types')\n6. How do I use conditional statements in Python? (Example: 'Show me an if statement in Python')\n7. Tell me about loops in Python. (Example: 'Explain Python for loops')\n8. How do I define functions in Python? (Example: 'Create a Python function')\n9. What are common string manipulation methods in Python? (Example: 'Show me how to use the upper() method in Python')\n10. What are common list methods in Python? (Example: 'How to add elements to a Python list?')\nFeel free to ask any of these questions, or anything else you'd like to know!"]
+      "responses": ["Sure! Here are some questions you can ask me:\n1. What is Python?\n2. How can I install Python?\n3. What is Python syntax?\n4. How do I declare variables in Python?\n5. What are the basic data types in Python?\n6. How do I use conditional statements in Python?\n7. Tell me about for loops in Python.\n8. Tell me about while loops in Python.\n9. How do I define functions in Python?\n10. What are common string manipulation methods in Python?\n11. What are common list methods in Python?\nFeel free to ask any of these questions, or anything else you'd like to know!"]
     }
   ]
 }
