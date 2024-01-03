@@ -2,339 +2,73 @@
   "intents": [
     {
       "tag": "greeting",
-      "patterns": [
-        "Hi",
-        "Hello",
-        "Hey",
-        "Greetings",
-        "Good day",
-        "Hi there",
-        "Greetings!",
-        "Hey, how are you?",
-        "Hi, what's up?",
-        "Good morning",
-        "Good afternoon",
-        "Howdy"
-      ],
-      "responses": [
-        "Hello! Welcome to the chat. How can I assist you today?",
-        "Hi there! I'm here to help. What do you need assistance with?",
-        "Greetings! How may I be of service to you today?",
-        "Hey! How's it going?",
-        "Hello! If you have any questions, feel free to ask.",
-        "Hi! Nice to see you. What can I do for you today?",
-        "Hey! I hope you're having a great day. How can I assist you?",
-        "Greetings! If there's anything you'd like to know, just let me know."
-      ]
+      "patterns": ["Hi", "Hello", "Hey", "Good morning", "Good afternoon"],
+      "responses": ["Hello! How can I help you?", "Hi there! What can I assist you with today?"]
     },
     {
-      "tag": "goodbye",
-      "patterns": [
-        "Goodbye",
-        "Farewell",
-        "Bye",
-        "See you later",
-        "Take care",
-        "Until next time",
-        "Bye for now",
-        "Have a great day",
-        "Goodnight",
-        "See you soon",
-        "So long",
-        "Adios"
-      ],
-      "responses": [
-        "Goodbye! If you have more questions or need assistance in the future, feel free to ask.",
-        "Farewell! Don't hesitate to return if you require further assistance.",
-        "Bye! Have a great day! If you ever need help, I'll be here.",
-        "Take care! If there's anything else you need, don't hesitate to reach out.",
-        "Until next time! If you have further inquiries, feel free to come back.",
-        "Bye for now! If there's anything else on your mind, feel free to ask.",
-        "Have a great day! If there's anything I can help you with, let me know.",
-        "Goodnight! If you need assistance in the future, feel free to reach out.",
-        "See you soon! If there's anything you'd like to discuss, I'll be here.",
-        "So long! If you ever have more questions, feel free to reach out.",
-        "Adios! If there's anything else you'd like to know, don't hesitate to ask."
-      ]
+      "tag": "farewell",
+      "patterns": ["Goodbye", "See you later", "Bye", "Adios"],
+      "responses": ["Goodbye! If you have more questions, feel free to ask.", "See you later!"]
     },
     {
-      "tag": "python_variables",
-      "patterns": [
-        "What is a variable in Python?",
-        "How to declare a variable?",
-        "Python variable assignment",
-        "Explain Python variables",
-        "Variable definition in Python",
-        "Python variables example",
-        "Declare a variable in Python",
-        "Python variable basics",
-        "Variable naming conventions",
-        "Python variable initialization",
-        "Using variables in Python",
-        "How to store data in Python"
-      ],
-      "responses": [
-        "In Python, a variable is a named storage location that holds data. For instance, 'x = 10' declares a variable 'x' with a value of 10.",
-        "To declare a variable, use a name followed by an assignment operator and a value. Example: 'name = 'John''.",
-        "Python allows you to declare variables with different data types. For example:\n\n```python\nname = 'John'\nage = 25\nprice = 29.99\n```",
-        "Variables in Python are used to store and manage data. Choose meaningful names for better code readability.",
-        "When naming variables, follow Python's naming conventions. Use underscores for multi-word variable names (e.g., 'user_name').",
-        "Consider initializing variables with meaningful default values. Example: 'count = 0' initializes 'count' to zero.",
-        "Using variables in Python allows you to store, retrieve, and manipulate data in your programs."
-      ]
+      "tag": "thanks",
+      "patterns": ["Thank you", "Thanks", "Appreciate it"],
+      "responses": ["You're welcome!", "No problem, happy to help!"]
     },
     {
-      "tag": "python_expressions",
-      "patterns": [
-        "Explain expressions in Python.",
-        "How to create expressions?",
-        "Python arithmetic expressions",
-        "Python expressions examples",
-        "Understanding Python expressions",
-        "Python expression syntax",
-        "Examples of Python expressions",
-        "Using operators in Python",
-        "Building expressions in Python",
-        "Arithmetic operations in Python",
-        "Evaluate expressions in Python",
-        "Advanced Python expressions"
-      ],
-      "responses": [
-        "Expressions in Python are combinations of values and operators that can be evaluated to a result. For example, '2 + 3' is an expression that evaluates to 5.",
-        "Create arithmetic expressions using operators like +, -, *, and /. Example: 'result = 10 * (3 + 2)'.",
-        "Python expressions follow a syntax where you can combine variables, constants, and operators. For example:\n\n```python\nresult = num1 + num2 * (3 / 2)\n```",
-        "Expressions can involve various operators, including arithmetic, comparison, and logical operators.",
-        "When building expressions, ensure proper order of operations using parentheses. Example: 'total = (price * quantity) + tax'.",
-        "Evaluate expressions in Python to obtain the result. Example: 'result = 2 ** 3' calculates 2 to the power of 3.",
-        "Advanced Python expressions may involve functions, method calls, and complex mathematical operations."
-      ]
+      "tag": "python_intro",
+      "patterns": ["What is Python?", "Tell me about Python", "Python basics"],
+      "responses": ["Python is a high-level programming language known for its simplicity and readability. For example, you can write a simple 'Hello, World!' program in Python like this:\n\n```python\nprint('Hello, World!')\n```"]
     },
     {
-      "tag": "python_input",
-      "patterns": [
-        "How to take user input in Python?",
-        "Python input function",
-        "Get user input in Python",
-        "User input in Python",
-        "Accepting input from the user",
-        "Python input example",
-        "Using input() in Python",
-        "Reading user input",
-        "Handling user input in Python",
-        "User interaction in Python",
-        "Interactive Python programs",
-        "Getting information from the user"
-      ],
-      "responses": [
-        "Use the input() function in Python to take user input. For example, 'name = input('Enter your name: ')'.",
-        "The input() function reads a line from the user, converts it to a string, and returns the result. Example: 'age = int(input('Enter your age: '))'.",
-        "When using input(), remember to convert the input to the desired data type. Example:\n\n```python\nage = int(input('Enter your age: '))\n```",
-        "Handling user input in Python involves using input() along with appropriate data type conversion functions.",
-        "Interactive Python programs can use user input to customize behavior and provide a dynamic experience.",
-        "Consider providing clear prompts to guide users when using input(). Example: 'user_input = input('Enter your choice: ')'.",
-        "Getting information from the user through input() is a common practice in many Python applications."
-      ]
+      "tag": "python_installation",
+      "patterns": ["How can I install Python?", "Python installation", "Installing Python"],
+      "responses": ["You can download Python from the official website (python.org) and follow the installation instructions for your operating system. For example, here's how you can install Python on Windows:\n\n1. Download the Python installer from python.org.\n2. Run the installer and follow the on-screen instructions.\n3. Python will be installed on your system."]
     },
     {
-      "tag": "python_data_types",
-      "patterns": [
-        "What are data types in Python?",
-        "Python data type examples",
-        "How to check the data type of a variable in Python?",
-        "Data types in Python",
-        "Python variable types",
-        "Python data types tutorial",
-        "Common data types in Python",
-        "Understanding Python data types",
-        "Working with data types in Python",
-        "Data type conversion in Python",
-        "Python dynamic typing",
-        "Static vs. dynamic typing in Python"
-      ],
-      "responses": [
-        "Data types in Python represent the type of data stored in a variable. Examples include int, float, str, list, tuple, and dict.",
-        "Common data types include int, float, str, list, tuple, and dict. Example: 'price = 29.99' declares a variable 'price' with a float data type.",
-        "To check the data type of a variable, use the type() function. Example:\n\n```python\ntype_of_price = type(price)\n```",
-        "Understanding Python data types is essential for effective programming and data manipulation.",
-        "Work with data types in Python to perform operations and transformations on variables and values.",
-        "Python's dynamic typing allows variables to change their type during runtime based on assigned values.",
-        "Consider the trade-offs between static typing and dynamic typing when choosing data types in Python."
-      ]
+      "tag": "python_syntax",
+      "patterns": ["What is Python syntax?", "Python code structure", "Python indentation"],
+      "responses": ["Python uses indentation to indicate blocks of code. For instance, here's a simple 'if' statement in Python:\n\n```python\nif x > 5:\n    print('x is greater than 5')\nelse:\n    print('x is not greater than 5')\n```"]
     },
     {
-      "tag": "python_operators",
-      "patterns": [
-        "Explain operators in Python.",
-        "Types of operators in Python",
-        "Python arithmetic operators",
-        "Operators in Python examples",
-        "Understanding Python operators",
-        "Python operators tutorial",
-        "Common operators in Python",
-        "Arithmetic operations in Python",
-        "Logical operators in Python",
-        "Comparison operators in Python",
-        "Bitwise operators in Python",
-        "Assignment operators in Python"
-      ],
-      "responses": [
-        "Operators in Python are symbols that perform operations on variables and values. Arithmetic operators include +, -, *, /, %, and //. For example, 'result = num1 + num2'.",
-        "Arithmetic operators include +, -, *, /, %, and //. Example: 'remainder = 10 % 3' calculates the remainder of the division.",
-        "Python supports various operators, including comparison operators (==, !=, <, >) and logical operators (and, or, not). Example:\n\n```python\nresult = (x > 0) and (y < 10)\n```",
-        "Common operators in Python cover arithmetic, logical, comparison, bitwise, and assignment operations.",
-        "Perform arithmetic operations in Python to manipulate numerical values. Example: 'total = price * quantity'.",
-        "Logical operators in Python, such as 'and', 'or', and 'not', are used to perform logical operations on Boolean values.",
-        "Comparison operators in Python are used to compare values and produce Boolean results. Example: 'is_equal = x == y'."
-      ]
-    },    {
+      "tag": "variables",
+      "patterns": ["How do I declare variables in Python?", "Python variables", "Variable assignment"],
+      "responses": ["In Python, you can declare a variable by simply assigning a value to a name. For example, you can declare an integer variable 'x' like this:\n\n```python\nx = 10\n```"]
+    },
+    {
+      "tag": "data_types",
+      "patterns": ["What are the basic data types in Python?", "Python data types", "Data type examples"],
+      "responses": ["Python has several basic data types, including integers, floats, strings, booleans, and lists. For example, you can declare a string variable like this:\n\n```python\nname = 'Alice'\n```"]
+    },
+    {
+      "tag": "conditional_statements",
+      "patterns": ["How do I use conditional statements in Python?", "Python if statements", "Conditional expressions"],
+      "responses": ["You can use 'if', 'elif', and 'else' statements in Python for conditional logic. For example, here's a basic 'if' statement:\n\n```python\nif age >= 18:\n    print('You are an adult')\nelse:\n    print('You are not an adult')\n```"]
+    },
+    {
+      "tag": "loops",
+      "patterns": ["Tell me about loops in Python", "Python for loop", "While loop in Python"],
+      "responses": ["Python provides 'for' and 'while' loops for iterating over sequences or executing code repeatedly. For example, here's a 'for' loop to iterate through a list:\n\n```python\nfruits = ['apple', 'banana', 'cherry']\nfor fruit in fruits:\n    print(fruit)\n```"]
+    },
+    {
       "tag": "python_functions",
-      "patterns": [
-        "How to define a function in Python?",
-        "Python function syntax",
-        "Benefits of using functions in Python",
-        "Creating functions in Python",
-        "Function declaration in Python",
-        "Python function example",
-        "Why use functions in Python?",
-        "Advantages of functions in Python"
-      ],
-      "responses": [
-        "Define a function in Python using the def keyword, function name, and parameters. Example: 'def greet(name): print('Hello, ' + name)'",
-        "Functions help organize code, promote reusability, and improve maintainability. Example: 'result = add(3, 5)' calls a function named 'add'.",
-        "When defining functions, use meaningful names for clarity. Example:\n\n```python\ndef calculate_area(radius):\n    return 3.14 * radius ** 2\n```",
-        "In Python, functions are first-class citizens, allowing them to be assigned to variables and passed as arguments.",
-        "Use functions to encapsulate logic and enhance the readability of your code. Example:\n\n```python\nresult = perform_operation(5, 3, add)\n```"
-      ]
+      "patterns": ["How do I define functions in Python?", "Python function syntax", "Creating functions"],
+      "responses": ["You can define functions in Python using the 'def' keyword followed by the function name and parameters. Here's an example of a simple function:\n\n```python\ndef greet(name):\n    print('Hello, ' + name)\n\ngreet('Alice')\n```"]
     },
     {
-      "tag": "python_loops",
-      "patterns": [
-        "What are loops in Python?",
-        "Types of loops in Python",
-        "Python for loop syntax",
-        "Examples of Python loops",
-        "Understanding Python loops",
-        "Python loops tutorial",
-        "Why use loops in Python?",
-        "Advantages of loops in Python"
-      ],
-      "responses": [
-        "Loops in Python allow you to repeatedly execute a block of code. Common types include for loops and while loops. Example: 'for i in range(5): print(i)'",
-        "While expressions are evaluated to produce a value, statements are executed to perform an action. Example: 'while count < 3: print('Hello')'.",
-        "When using loops, ensure proper indentation for correct syntax. Example:\n\n```python\nfor item in my_list:\n    print(item)\n```",
-        "Loops are beneficial for automating repetitive tasks and processing data collections efficiently. Example:\n\n```python\nfor item in data:\n    process_item(item)\n```"
-      ]
+      "tag": "string_methods",
+      "patterns": ["Common string manipulation methods", "Python string functions", "String operations"],
+      "responses": ["Python provides various string methods, including 'upper()', 'lower()', 'strip()', 'split()', 'join()', and 'replace()', to manipulate and modify strings. For example, you can use 'upper()' to convert a string to uppercase:\n\n```python\ntext = 'hello'\nuppercase_text = text.upper()\nprint(uppercase_text)\n```"]
     },
     {
-      "tag": "python_for_loop",
-      "patterns": [
-        "What is a for loop in Python?",
-        "How to use a for loop?",
-        "Python for loop syntax",
-        "Using for loops in Python",
-        "Python for loop examples",
-        "Python for loop tutorial",
-        "When to use a for loop in Python?",
-        "Advantages of for loops in Python"
-      ],
-      "responses": [
-        "A for loop in Python is used to iterate over a sequence (such as a list, tuple, or string) and execute a block of code for each element. Example: 'for i in range(5): print(i)'.",
-        "For loops are useful for iterating through collections like lists and strings. Example:\n\n```python\nfor char in 'Python':\n    print(char)\n```",
-        "For loops simplify the process of iterating over elements and are well-suited for scenarios where the number of iterations is known. Example:\n\n```python\nfor item in my_list:\n    process_item(item)\n```"
-      ]
+      "tag": "list_methods",
+      "patterns": ["Common list methods in Python", "List operations", "Manipulating lists"],
+      "responses": ["Lists in Python can be modified using methods such as 'append()', 'extend()', 'insert()', 'remove()', 'pop()', and 'sort()'. For instance, you can use 'append()' to add an element to a list:\n\n```python\nfruits = ['apple', 'banana', 'cherry']\nfruits.append('orange')\nprint(fruits)\n```"]
     },
     {
-      "tag": "python_while_loop",
-      "patterns": [
-        "What is a while loop in Python?",
-        "How to use a while loop?",
-        "Python while loop syntax",
-        "Using while loops in Python",
-        "Python while loop examples",
-        "Python while loop tutorial",
-        "When to use a while loop in Python?",
-        "Advantages of while loops in Python"
-      ],
-      "responses": [
-        "A while loop in Python is used to repeatedly execute a block of code as long as a specified condition is true. Example: 'while count < 3: print('Hello')'.",
-        "While loops are suitable for scenarios where the number of iterations is not known beforehand. Example:\n\n```python\nwhile total < 100:\n    total += num\n```",
-        "While loops provide flexibility in handling conditions that may change during execution. Example:\n\n```python\nwhile not is_done:\n    perform_task()\n```"
-      ]
-    },
-    {
-      "tag": "python_if_statements",
-      "patterns": [
-        "How to use if statements in Python?",
-        "Python if statement examples",
-        "Conditional statements in Python",
-        "Python if statements syntax",
-        "Understanding Python if statements",
-        "Python if statements tutorial",
-        "Why use if statements in Python?",
-        "Advantages of if statements in Python"
-      ],
-      "responses": [
-        "If statements in Python allow you to make decisions based on conditions. Example: 'if x > 0: print('Positive')'.",
-        "You can use the if, elif, and else keywords for conditional branching. Example: 'if score >= 90: grade = 'A'; elif score >= 80: grade = 'B'; else: grade = 'C'.'",
-        "For complex conditions, use parentheses to ensure the correct order of evaluation. Example:\n\n```python\nif (x > 0) and (y < 10):\n    print('Both conditions are true')\n```",
-        "If statements are essential for controlling the flow of your program and executing specific code blocks based on different conditions. Example:\n\n```python\nif is_valid(user_input):\n    process_input(user_input)\nelse:\n    handle_invalid_input(user_input)\n```"
-      ]
-    },
-    {
-      "tag": "python_lists",
-      "patterns": [
-        "What are lists in Python?",
-        "How to create and manipulate lists?",
-        "Python list methods",
-        "Working with lists in Python",
-        "Python list manipulation",
-        "Python lists tutorial",
-        "Why use lists in Python?",
-        "Advantages of lists in Python"
-      ],
-      "responses": [
-        "A list in Python is a collection of ordered and mutable elements. Example: 'numbers = [1, 2, 3, 4, 5]'.'",
-        "Create lists using square brackets and perform various operations using list methods. Example: 'names.append('Alice')' adds 'Alice' to the end of the list.'",
-        "Lists are versatile data structures that allow you to store and manipulate collections of items efficiently. Example:\n\n```python\nusernames = ['alice', 'bob', 'charlie']\n```"
-      ]
-    },
-    {
-      "tag": "python_string_manipulation",
-      "patterns": [
-        "How to manipulate strings in Python?",
-        "String manipulation techniques in Python",
-        "Python string methods",
-        "Working with strings in Python",
-        "Python string operations",
-        "Python string manipulation tutorial",
-        "Why use string manipulation in Python?",
-        "Advantages of string manipulation in Python"
-      ],
-      "responses": [
-        "String manipulation in Python involves operations like concatenation, slicing, and formatting. Example: 'greeting = 'Hello' + ' ' + 'World!''.",
-        "Use string methods like split(), join(), and replace() for manipulation. Example: 'uppercase_name = name.upper()'.",
-        "When manipulating strings, consider using f-strings for better readability. Example:\n\n```python\nformatted_string = f'Hello, {name}!'\n```",
-        "String manipulation is crucial for handling textual data and formatting output in a readable manner. Example:\n\n```python\nformatted_date = f'Today is {day} {month} {year}'\n```"
-      ]
-    },
-    {
-      "tag": "python_sorting",
-      "patterns": [
-        "How to sort a list in Python?",
-        "Python sorting algorithms",
-        "Sort elements in Python",
-        "Sorting in Python",
-        "Python list sorting",
-        "Python sorting tutorial",
-        "Why use sorting in Python?",
-        "Advantages of sorting in Python"
-      ],
-      "responses": [
-        "Sort elements in a list using the sorted() function or the sort() method in Python. Example: 'sorted_numbers = sorted([4, 2, 7, 1, 5])'.",
-        "Common sorting algorithms include bubble sort, merge sort, and quicksort. Example: 'numbers.sort()' sorts the list in-place.",
-        "When sorting, use the key parameter to specify a custom sorting criterion. Example:\n\n```python\nsorted_names = sorted(names, key=len)\n```",
-        "Sorting is essential for organizing data in a meaningful way, making it easier to search, retrieve, and analyze. Example:\n\n```python\nsorted_users = sorted(user_data, key=lambda x: x['age'])\n```"
-      ]
+      "tag": "help",
+      "patterns": ["/help", "help", "list commands", "available questions"],
+      "responses": ["Sure! Here are some questions you can ask me:\n1. What is Python? (Example: 'Tell me about Python')\n2. How can I install Python? (Example: 'How do I install Python?')\n3. What is Python syntax? (Example: 'Explain Python syntax')\n4. How do I declare variables in Python? (Example: 'How to declare variables in Python?')\n5. What are the basic data types in Python? (Example: 'List Python data types')\n6. How do I use conditional statements in Python? (Example: 'Show me an if statement in Python')\n7. Tell me about loops in Python. (Example: 'Explain Python for loops')\n8. How do I define functions in Python? (Example: 'Create a Python function')\n9. What are common string manipulation methods in Python? (Example: 'Show me how to use the upper() method in Python')\n10. What are common list methods in Python? (Example: 'How to add elements to a Python list?')\nFeel free to ask any of these questions, or anything else you'd like to know!"]
     }
   ]
 }
